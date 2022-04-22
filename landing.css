@@ -1,0 +1,338 @@
+body, html {
+
+    background:white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+nav{
+
+    width: 100%;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    display: flex;
+    animation-name: navAnimate;
+    animation-duration: 5s;
+}
+
+@keyframes navAnimate {
+
+    from{
+
+        top: -100%;
+    }
+    
+}
+
+.imageContainer{
+
+    height: 150px;
+    width: 150px;
+    position:absolute;
+    top: 35%;
+    left: 14%;
+    animation-name: fromLeft;
+    animation-duration: 5s;
+}
+
+.imageContainer img{
+    height: 100%;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 30%;
+}
+
+li{
+    list-style: none;
+    margin: 30px;
+}
+
+nav ul li a{
+
+ text-decoration: none;
+ font-size: 20px;
+ font-weight: bolder;
+ color: rgb(0, 0, 0);
+ font-family: sans-serif;
+}
+
+.OVE{
+
+    color: blue;
+    font-size: 50px;
+    font-family: sans-serif;
+    line-height: 110px;
+    position: absolute;
+    left: 22%;
+    font-weight: bolder;
+    position: absolute;
+    top: 37%;
+
+    animation-name: oveAnimate;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    
+}
+
+@keyframes oveAnimate {
+
+    0%{
+        color: black;
+    }
+
+    25%{
+        color: red;
+    }
+    50%{
+        color: green;
+    }
+    75%{
+        color: orange;
+    }
+    100%{
+        color: blue;
+    }
+
+    
+}
+
+.IT{
+
+    color: black;
+    font-size: 60px;
+    line-height: 110px;
+    position: absolute;
+    left: 30%;
+    top: 37%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    animation-name: fromLeft;
+    animation-duration: 5s;
+}
+
+.welcomeImage{
+
+    height: 700px;
+    width: 800px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    animation-name: imageRight;
+    animation-duration: 5s; 
+}
+
+@keyframes imageRight {
+    
+    from{
+
+        right: -100%;
+    }
+}
+
+.welcomeImage img{
+    height: 100%;
+    width: 100%;
+}
+
+.welcomeText{
+    animation-name: fromLeft;
+    animation-duration: 5s;
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    left: 7.5%;
+    bottom: 43%;
+    box-shadow: 3px 3px 10px rgb(14, 70, 0) ;
+    border-radius: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.welcomeText p{
+
+  text-align: center;
+  text-transform: capitalize;
+  font-size:15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: rgb(65, 62, 62);
+ 
+}
+
+.think{
+
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    top: 30%;
+    left: 5%;
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    animation-name: fromLeft;
+    animation-duration: 5s;
+}
+
+    @keyframes fromLeft {
+
+        from{
+            left: -50%;
+        }
+        
+    }
+
+.WE{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top:39%;
+    left: 9%;
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation-name: fromLeft;
+    animation-duration: 5s;
+}
+
+.active{
+
+    color: rgb(19, 42, 255);
+    animation-name: oveAnimate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.btnSignIn{
+
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0);
+    bottom: 30%;
+    left: 7.5%;
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    animation-name: fromLeft;
+    animation-duration: 5s;
+}
+
+.btnSignUp{
+
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0);
+    bottom: 30%;
+    left: 21%;
+    border-style: solid;
+    border-color: rgb(0, 95, 40);
+    border-width: 2px;
+    animation-name: fromLeft;
+    animation-duration: 5s;
+}
+
+.btnSignIn a{
+
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family:cursive;
+    font-size: 30px;
+}
+
+
+.btnSignUp a{
+
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family:cursive;
+    font-size: 30px;
+}
+
+
+.socials{
+
+    width: 100px;
+    height: 380px;
+    position: absolute;
+    left: 1%;
+    bottom:5%;
+    display: flexbox;
+  
+}
+
+.socials .fa{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-self: center;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    margin-top: 5px;
+    box-shadow: 3px 3px 10px black;
+}
+
+.socials a
+{
+   text-decoration: none;
+}
+
+.fa-facebook{
+    color: #ffffff;
+    background: #4267B2;
+}
+
+.fa-instagram{
+
+    border-color: 	#ffffff;
+    color: #ffffff;
+    background: #8a3ab9;
+}
+
+.fa-linkedin{
+   
+    border-color: #ffffff;
+    color: #ffffff;
+    background:#0077b5 ;
+}
+
+.fa-youtube{
+    color: 	#ffffff;
+    border-color: 	#ffffff;
+    background: #FF0000;
+}
+
+.fa-github{
+
+    
+    background: #171515;
+    color: white;
+}
+
+.fa-twitter{
+
+    background:#00acee ;
+    color: white;
+    
+}
+   
